@@ -169,7 +169,7 @@ const Index = () => {
               <div className="text-lg opacity-90">Active Challenges</div>
             </div>
             <div className="animate-fade-in">
-              <div className="text-4xl font-bold mb-2">10K+</div>
+              <div className="text-4xl font-bold mb-2">10000+</div>
               <div className="text-lg opacity-90">Solution Contributors</div>
             </div>
             <div className="animate-fade-in">
@@ -177,7 +177,7 @@ const Index = () => {
               <div className="text-lg opacity-90">Organizations</div>
             </div>
             <div className="animate-fade-in">
-              <div className="text-4xl font-bold mb-2">$2M+</div>
+              <div className="text-4xl font-bold mb-2">2Lakhs+</div>
               <div className="text-lg opacity-90">Rewards Distributed</div>
             </div>
           </div>
@@ -261,7 +261,7 @@ const featuredChallenges = [
     urgency: "High",
     description: "We need innovative biodegradable packaging solutions that maintain product protection while reducing environmental impact for our e-commerce operations.",
     solutions: 23,
-    reward: "₹1515K"
+    reward: "₹151500"
   },
   {
     title: "AI-Powered Quality Control System",
@@ -270,7 +270,7 @@ const featuredChallenges = [
     urgency: "Critical",
     description: "Develop an AI system to detect product defects in real-time on our assembly line, reducing waste and improving quality standards.",
     solutions: 31,
-    reward: "₹1525K"
+    reward: "₹152500"
   },
   {
     title: "Remote Healthcare Monitoring Platform",
@@ -279,7 +279,7 @@ const featuredChallenges = [
     urgency: "High",
     description: "Create a comprehensive platform for remote patient monitoring that integrates with existing healthcare systems and improves patient outcomes.",
     solutions: 18,
-    reward: "₹1520K"
+    reward: "₹152000"
   }
 ];
 
