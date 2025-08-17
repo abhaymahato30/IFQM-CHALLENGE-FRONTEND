@@ -29,6 +29,7 @@ import {
   Target,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const ITEMS_PER_PAGE = 9;
 
@@ -259,6 +260,15 @@ const ChallengeCard = ({ challenge }: { challenge: any }) => {
   };
 
   const urgency = challenge.urgency_level || "Low";
+  const navigate = useNavigate();
+
+  const handleViewDetails = (challengeId: string) => {
+    // Save challengeId to localStorage for later use
+    localStorage.setItem("challengeId", challengeId);
+
+    // Navigate to the details page
+    navigate(`/challenge/${challengeId}`);
+  };
 
   return (
     <Card className="border-2 hover:border-primary/30 transition-all duration-300 hover:shadow-lg group">
@@ -309,9 +319,11 @@ const ChallengeCard = ({ challenge }: { challenge: any }) => {
           </div>
         </div>
 
-        <Link to={`/challenge/${challenge._id}`} className="block mt-4">
-          <Button className="w-full">View Details</Button>
-        </Link>
+
+        <Button onClick={() => handleViewDetails(challenge._id)}>
+                View Details
+              </Button>
+      
       </CardContent>
     </Card>
   );

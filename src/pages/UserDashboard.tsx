@@ -251,7 +251,7 @@ const UserDashboard: React.FC = () => {
             <CardContent>
               <Award className="h-8 w-8 text-accent mx-auto mb-2" />
               <div className="text-2xl font-bold">
-                ${stats.rewards.toLocaleString()}
+                {stats.rewards.toLocaleString()}
               </div>
               <div className="text-sm text-muted-foreground">Rewards Earned</div>
             </CardContent>

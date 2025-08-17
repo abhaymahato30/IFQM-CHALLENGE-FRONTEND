@@ -261,7 +261,7 @@ const featuredChallenges = [
     urgency: "High",
     description: "We need innovative biodegradable packaging solutions that maintain product protection while reducing environmental impact for our e-commerce operations.",
     solutions: 23,
-    reward: "$15K"
+    reward: "₹1515K"
   },
   {
     title: "AI-Powered Quality Control System",
@@ -270,7 +270,7 @@ const featuredChallenges = [
     urgency: "Critical",
     description: "Develop an AI system to detect product defects in real-time on our assembly line, reducing waste and improving quality standards.",
     solutions: 31,
-    reward: "$25K"
+    reward: "₹1525K"
   },
   {
     title: "Remote Healthcare Monitoring Platform",
@@ -279,7 +279,7 @@ const featuredChallenges = [
     urgency: "High",
     description: "Create a comprehensive platform for remote patient monitoring that integrates with existing healthcare systems and improves patient outcomes.",
     solutions: 18,
-    reward: "$20K"
+    reward: "₹1520K"
   }
 ];
 
