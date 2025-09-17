@@ -16,7 +16,7 @@ import UserDashboard from "./pages/UserDashboard";
 import NotFound from "./pages/NotFound";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
-
+import About from "./pages/About";
 // Firebase
 import { auth } from "../src/lib/firebase";
 import { onAuthStateChanged } from "firebase/auth";
@@ -28,7 +28,7 @@ const App = () => {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
       if (user) {
         const token = await user.getIdToken(true);
-        console.log("🔥 Firebase Bearer token:", token);
+        // console.log("🔥 Firebase Bearer token:", token);
       } else {
         console.log("⚠️ No user logged in");
       }
@@ -73,6 +73,9 @@ const App = () => {
             <Route path="/dashboard" element={<UserDashboard />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="/about" element={<About />} />
+
+
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

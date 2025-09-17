@@ -70,18 +70,23 @@ const Navigation = () => {
             >
               Dashboard
             </Link>
-            <a
-              href="#"
-              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
-            >
-              Community
-            </a>
-            <a
-              href="#"
-              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+               <Link
+              to="/about"
+              className={`text-sm font-medium transition-colors hover:text-primary ${
+                isActive("/about") ? "text-primary" : "text-muted-foreground"
+              }`}
             >
               About
-            </a>
+            </Link>
+              <Link
+              to="/admin"
+              className={`text-sm font-medium transition-colors hover:text-primary ${
+                isActive("/admin") ? "text-primary" : "text-muted-foreground"
+              }`}
+            >
+              Admin
+            </Link>
+           
           </div>
 
           {/* Right Side Actions */}
